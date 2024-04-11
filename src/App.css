@@ -13,6 +13,36 @@
   }
 }
 
+.section-container {
+  border: 1px solid #ccc; /* Border with a 1px width and color #ccc */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Reduce padding for smaller boxes */
+  margin-bottom: 20px; /* Add margin to separate the boxes */
+  max-width: 1000px; /* Limit the maximum width of the boxes */
+  margin-left: auto; /* Center the boxes horizontally */
+  margin-right: auto;
+  background-color: whitesmoke;
+}
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.back-to-top-button:hover {
+  color: #fff; /* Change color on hover */
+  background-color: forestgreen; /* Change background color on hover */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +65,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.section-container {
+  text-align: center; /* Center align the text */
+}
+
+h1 {
+  text-align: center; /* Center align the text */
+  color: whitesmoke; /* Change the color to blue (adjust as needed) */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: x-large;
+  padding: 30px;
+}
+
+h2 {
+  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 70px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: #333; /* Adjust color as needed */
+  background-color: whitesmoke;
+  border: 2px solid #333; /* Add border */
+  border-radius: 20px; /* Add rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.navbar a:hover {
+  color: whitesmoke; /* Change color on hover as needed */
+  background-color: forestgreen; /* Change background color on hover */
 }
